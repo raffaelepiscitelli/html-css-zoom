@@ -1,0 +1,22 @@
+/*RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid magenta;
+}
+
+main {
+    width: 100vw;
+    height: calc(100vh - 50px);
+}
+
+.upper-frame {
+    background-color: black;
+    height: 50px;
+}
+
+.first-row {
+    display: flex;
+    width: calc (100% / 7);
+}
