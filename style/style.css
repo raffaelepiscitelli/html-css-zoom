@@ -10,11 +10,13 @@ main {
     height: calc(100vh - 50px);
     background-color: black;
     overflow: auto;
+    
 }
+
 
 .upper-frame {
     background-color: black;
-    height: 50px;
+    height: 70px;
 }
 
 .first-row {
