@@ -5,27 +5,117 @@
     box-sizing: border-box;
 }
 
-main {
-    width: 100vw;
-    height: calc(100vh - 50px);
-    background-color: black;
-    overflow: auto;
+body {
+    color: white;
+    font-family: sans-serif;
     
 }
 
-
-.upper-frame {
-    background-color: black;
-    height: 70px;
+.zoom-view-option {
+    background-color: rgb(32, 32, 32);
+    height: 50px;
+    position: relative;
 }
 
-.first-row {
+.maximize {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-color: rgba(128, 128, 128, 0.492);
+    font-size: small;
+    padding: 0.3rem;
+    border-radius: 5px;
+}
+
+.speaker-view {
+    position: absolute;
+    right: 35px;
+    top: 5px;
+    background-color: rgba(128, 128, 128, 0.492);
+    font-size: small;
+    padding: 0.3rem;
+    border-radius: 5px;
+}
+
+main {
+    background-color: black;
+    height: calc(100vh - 110px);
+    overflow: auto;
+}
+
+.users {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+.guest {
+    position: relative;
+    height: 130px;
+    width: 200px;
+    padding: 0.2rem;
+}
+
+.guest-picture {
+    height: 100%;
+    width: 100%;
+}
+
+.guest-name {
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.492);
+    bottom: 0.2rem;
+    left: 0.2rem;
+    font-size: x-small;
+    padding: 0.3rem;
+}
+
+header {
+    background-color: rgb(32, 32, 32);
+    height: 60px;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
-img {
-    width: calc(100vw / 7);
-    padding-right: 5px;
-    padding-bottom: 10px;
+.audio-video {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 1rem;
 }
+
+.icon {
+    font-size: x-large;
+    padding-bottom: 5px;
+}
+
+.fa-angle-up {
+    font-size: x-small;
+    margin: 0.5rem;
+}
+
+.font-icon {
+    font-size: x-small;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.zoom-function {
+    display: flex;
+    align-items: center;
+}
+
+.end-meeting {
+    display: flex;
+    align-items: center;
+    background-color: rgb(74, 74, 74);
+    color: red;
+    font-size: x-small;
+    width: 6rem;
+    justify-content: center;
+}
+
